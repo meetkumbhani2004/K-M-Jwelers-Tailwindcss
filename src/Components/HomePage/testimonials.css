@@ -1,0 +1,105 @@
+.testimonial1-wrapper {
+  padding: 60px 10px;
+}
+
+.testimonial1-wrapper h2 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.testimonial1-flex-row {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.testimonial1-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f7f9fe;
+  border-radius: 12px;
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.testimonial1-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial1-text {
+  flex: 1;
+  text-align: left;
+  padding-right: 15px;
+}
+
+.stars {
+  font-size: 16px;
+  color: #ffc107;
+  margin-bottom: 8px;
+}
+
+.text {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.name {
+  color: #000;
+  font-weight: 600;
+}
+
+.location {
+  color: #777;
+  font-size: 13px;
+}
+
+.testimonial1-img {
+  width: 120px;
+  height: 250px;
+  border-radius: 10px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.testimonial1-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* ✅ Float effect only on image hover */
+.testimonial1-img:hover img {
+  transform: scale(1.08) translateY(-3px);
+}
+
+/* Responsive (stack on small screens) */
+@media (max-width: 1024px) {
+  .testimonial1-flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .testimonial1-card {
+    width: 90%;
+  }
+}
+
+@media(max-width:768px) {
+  .testimonial1-flex-row  > :nth-child(2) {
+    display: none;
+  }
+  .testimonial1-flex-row  > :nth-child(3) {
+    display: none;
+  }
+}
+
+
+          

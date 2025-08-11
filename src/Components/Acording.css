@@ -1,0 +1,106 @@
+.accordion-wrapper {
+  max-width: 100%;
+  margin: 30px auto;
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.accordion-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: #FFFFFF;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  font-size: 20px;
+}
+
+.accordion-header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background-color: #007bff;
+  transition: width 0.4s ease;
+}
+
+.accordion-header:hover::after {
+  width: 15%;
+}
+
+.accordion-arrow {
+  transition: transform 0.3s ease;
+}
+
+.accordion-arrow.rotate {
+  transform: rotate(90deg);
+}
+
+.accordion-content {
+  padding: 10px 16px;
+  background-color: #fff;
+  animation: fadeIn 0.4s ease;
+}
+
+.accordion-line {
+  margin-bottom: 16px;
+  animation: fadeUp 0.5s ease both;
+  opacity: 0;
+}
+
+
+.line-text {
+  animation: fadeUp 0.4s ease forwards;
+  opacity: 0;
+}
+
+.fade {
+  animation: fadeUp 0.5s ease forwards;
+  opacity: 1;
+}
+
+/* Animations */
+@keyframes fillLine {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* media quert */
+@media (max-width:1200px){
+  .accordion-wrapper{
+    max-width: 1150px;
+  }
+}

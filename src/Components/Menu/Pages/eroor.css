@@ -1,0 +1,124 @@
+.erroe-image{
+padding: 20px;
+margin-left: 100px;
+margin-top: 50px;
+}
+
+.notfound-container {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+.notfound-container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin: 20px 0 10px;
+}
+
+.notfound-container p {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.btn-dark {
+  background-color: #111;
+  color: #fff;
+  padding: 25px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #ff69b4; /* Pink hover */
+}
+
+.newsletter {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.newsletter small {
+  font-size: 0.75rem;
+  color: gray;
+}
+
+.newsletter h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 10px 0 20px;
+}
+
+.newsletter-form {
+  width: 100%;
+  max-width: 1600px;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.newsletter-form input {
+  width: 100%; 
+  padding: 12px 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+  text-align: center;
+}
+.newsletter-form input::placeholder{
+    text-align: center;
+}
+
+.newsletter-form input:hover{
+     border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.newsletter-form button {
+  padding: 20px;
+  width: 150px;
+  margin-top: 20px;
+}
+
+@media(max-width:1024px){
+  .erroe-image{
+padding: 0px;
+margin-left: 2px;
+}
+}
+
+@media(max-width:768px){
+    .erroe-image img{
+padding: 20px;
+margin-top: 80px;
+max-width: 600px;
+max-height: 600px;
+margin-left: 100px;
+}
+}
+
+@media(max-width:576px){
+      .erroe-image img{
+padding: 20px;
+margin-top: 80px;
+max-width: 400px;
+max-height: 400px;
+margin-left: 80px;
+}
+}

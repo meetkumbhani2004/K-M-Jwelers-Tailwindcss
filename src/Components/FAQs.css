@@ -1,0 +1,135 @@
+.faq-section {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #fff;
+}
+
+.faq-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+}
+
+.faq-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.faq-card {
+  background: #F0F0F0;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  width: 300px;
+  height: 250px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.faq-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+  margin-left: 20px;
+}
+
+.faq-card h4 {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* Image hover animation on whole template hover */
+.faq-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  transition: transform 0.5s ease;
+  margin-left: 40px;
+}
+
+.faq-card:hover .faq-img-wrapper {
+  animation: shakeX 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes shakeX {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+
+
+.faq-img {
+  width: 70px;
+  height: 70px;
+}
+
+/* Delays for each card */
+.delay-0 { transition-delay: 0.1s; }
+.delay-1 { transition-delay: 0.3s; }
+.delay-2 { transition-delay: 0.5s; }
+.delay-3 { transition-delay: 0.7s; }
+.delay-4 { transition-delay: 0.9s; }
+
+
+/* media Qury */
+@media(max-width:1024px){
+  .faq-card {
+
+  padding: 2rem 1rem;
+  width: 250px;
+  height: 200px;
+}
+
+.faq-grid {
+  display: flex;
+  /* flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.faq-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  transition: transform 0.5s ease;
+}
+}
+
+@media(max-width:768px){
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+  .faq-card {
+  background: #F0F0F0;
+  border-radius: 20px;
+  padding: 3rem 2rem;
+  width: 350px;
+  height: 300px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+}
+
+@media(max-width:576px){
+    .faq-card {
+  border-radius: 20px;
+  padding: 2rem 1rem;
+  width: 250px;
+  height: 200px;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+}

@@ -1,0 +1,41 @@
+.register-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 100px 20px;
+}
+.register-form{
+    margin-top: 250px;
+}
+
+.register-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 16px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  outline: none;
+}
+.register-form input:hover{
+    border: 2px solid #DF9A7C;
+}
+
+.register-btn {
+  width: 100%;
+  padding: 18px;
+  border-radius: 25px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.register-btn:hover{
+    background:#DF9A7C ;
+}
+.acc{
+margin-top: 40px;
+}
+.newsletter1{
+  text-align: center;
+}

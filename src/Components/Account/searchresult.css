@@ -1,0 +1,20 @@
+.suggestions {
+  background: white;
+  border: 1px solid #ddd;
+  max-height: 200px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+}
+.suggestions p {
+  padding: 8px;
+  margin: 0;
+  cursor: pointer;
+}
+.suggestions p:hover {
+  background: #f0f0f0;
+}
+
+
+

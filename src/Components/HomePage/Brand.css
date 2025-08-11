@@ -1,0 +1,50 @@
+.brand-carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 50px;
+  background: #ffffff;
+}
+
+.brand-carousel {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.brand-carousel-item {
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+  animation: slideIn 0.4s ease-in-out;
+}
+
+.brand-carousel-item img {
+  max-height: 60px;
+  width: 150px;
+  display: block;
+}
+
+.brand-carousel-item:hover img {
+  transform: translateY(-5px) scale(1.05);
+}
+
+/* New logo enter animation */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media(max-width:768px){
+  .brand-carousel-item img {
+  max-height: 30px;
+  width: 100px;
+  display: block;
+}
+}

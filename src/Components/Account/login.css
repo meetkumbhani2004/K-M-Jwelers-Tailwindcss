@@ -1,0 +1,67 @@
+.login-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 100px 20px;
+  font-family: 'Arial';
+}
+
+.account-heading {
+  font-size: 28px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 120px;
+  text-align: center;
+}
+
+.breadcrumb {
+  margin-bottom: 30px;
+  color: gray;
+  text-align: center;
+
+}
+.log-tit{
+    margin-top: 200px;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 19px;
+  margin: 15px 0;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+input[type="email"]:hover,
+input[type="password"]:hover{
+    border: 2px solid #DF9A7C;
+}
+
+.login-btn {
+  background-color: #1C1C1C;
+  color: white;
+  padding: 20px 30px;
+  margin: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.login-btn:hover{
+    background: #DF9A7C;
+}
+
+.btn-group {
+  display: flex;
+  gap: 10px;
+}
+
+.forgot-row {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}

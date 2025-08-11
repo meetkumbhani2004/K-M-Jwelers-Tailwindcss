@@ -1,0 +1,134 @@
+/* Animation */
+.contact-form-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.about-title h1 {
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.about-title p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.contact-form-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Layout */
+.contact-page {
+  font-family: Arial, sans-serif;
+}
+
+.map-container {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 200px;
+}
+
+/* Form & Info */
+.contact-form-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1400px;
+  gap: 80px;
+  padding: 10px;
+  padding-top: 50px;
+  margin-bottom: 60px;
+}
+
+.form-left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.form-left h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form-left p {
+  margin-bottom: 20px;
+}
+
+.form-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-left input,
+.form-left textarea {
+  padding: 10px 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-left button {
+  padding: 12px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-left button:hover {
+  background-color: #ff69b4;
+}
+
+/* Contact Info */
+.form-right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 15px;
+  margin-top: 130px;
+}
+
+.form-right strong {
+  font-weight: 700;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+  font-size: 30px;
+}
+
+.social-icons i {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #ff69b4;
+}
+
+@media(max-width:576px){
+  .map-container{
+    border-radius: 10%;
+  }
+}
+
+@media(max-width:768px){
+  .contact-form-section{
+    flex-direction: column;
+  }
+}

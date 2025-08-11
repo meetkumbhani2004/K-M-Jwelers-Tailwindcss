@@ -1,0 +1,117 @@
+.faqs-page{
+    padding: 20px 30px;
+  }
+
+.about-title h1 {
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.about-title p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.image-Head{
+    margin-top: 200px;
+}
+.image-p{
+    margin-top: 20px;
+    color: #444;
+}
+
+.accordion {
+  border-top: 1px solid #ddd;
+  margin-top: 100px
+}
+
+.accordion-item {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 15px 10px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  color: #000;
+}
+
+.accordion-header:hover {
+  color: #e83e8c; /* Pink text hover */
+}
+
+.accordion-header:hover .accordion-arrow {
+  color: #e83e8c;
+}
+
+.accordion-arrow {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+.accordion-body {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 10px;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  font-weight: 400;
+  color: #444;
+}
+
+.accordion-body.open {
+  max-height: 200px;
+  padding: 10px;
+}
+
+.notfound-container{
+ text-align: center;
+ margin-top: 100px;
+ margin-bottom: 100px;
+}
+
+.notfound-container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+ 
+  margin-bottom: 30px;
+}
+
+.notfound-container p {
+  font-size: 1.1rem;
+   margin: 20px 0 10px;
+}
+
+.button-group {
+justify-content: center;
+}
+
+.btn-dark {
+  background-color: #111;
+  color: #fff;
+  padding: 25px;
+  border-radius: 999px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-dark:hover {
+  background-color: #ff69b4; /* Pink hover */
+}
+
+@media(max-width:576px){
+  .faqs-page{
+    padding: 20px 30px;
+  }
+}

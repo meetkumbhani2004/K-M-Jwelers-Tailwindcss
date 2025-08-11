@@ -1,0 +1,16 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow: auto !important;  /* Make sure it's not locked */
+}
+
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

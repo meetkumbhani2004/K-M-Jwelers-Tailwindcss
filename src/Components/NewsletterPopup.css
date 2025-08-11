@@ -1,0 +1,110 @@
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.popup-box {
+  background: white;
+  border-radius: 28px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  transform: translateY(-100px);
+  opacity: 0;
+  animation: slideDown 0.8s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.popup-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+.popup-text {
+  padding: 40px;
+  flex: 1;
+}
+
+.popup-text h2 {
+  margin: 0 0 10px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+.popup-text input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  margin: 20px 0;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  margin-top: 20px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.checkbox-row {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.close-btn1 {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+  font-size: 28px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  width: 40px;
+  height: 40px;
+}
+@media(max-width:768px){
+  .popup-overlay{
+    display: none;
+  }
+}
+
+@media(max-width:576px){
+  .popup-overlay{
+    display: none;
+  }
+}
